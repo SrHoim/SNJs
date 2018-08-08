@@ -28,16 +28,17 @@ window.onload=function(){
 	let t=setInterval(move,2000);
 	function move(){
 		num++;
-		if (num==1){bigbox.style.background="#D02247";}
-		if (num==2){bigbox.style.background="#47FFF2";}
-		if (num==3){bigbox.style.background="#D4F1EF";}
-		if (num==4){bigbox.style.background="#1F2120";}
-		if (num==5){bigbox.style.background="#D8D8D8";}
-		if (num==6){bigbox.style.background="#FB3570";}
-		if (num==7){bigbox.style.background="#FFBEC8";}
 		if(num==imgbox.length){
 			num=0;
 		}
+		if (num==0){bigbox.style.background="#FF1D3B";}
+		if (num==1){bigbox.style.background="#EAEAF4";}
+		if (num==2){bigbox.style.background="#5F4F40";}
+		if (num==3){bigbox.style.background="#FF4B64";}
+		if (num==4){bigbox.style.background="#5F7F94";}
+		if (num==5){bigbox.style.background="#3A85FA";}
+		if (num==6){bigbox.style.background="#CF031E";}
+		if (num==7){bigbox.style.background="#F9C04C";}
 		for(let i=0;i<imgbox.length;i++){
 			imgbox[i].style.zIndex=5;
 			btn[i].className="btn";
@@ -47,16 +48,17 @@ window.onload=function(){
 	}
 	function move1(){
 		num--;
-		if (num==1){bigbox.style.background="#D02247";}
-		if (num==2){bigbox.style.background="#47FFF2";}
-		if (num==3){bigbox.style.background="#D4F1EF";}
-		if (num==4){bigbox.style.background="#1F2120";}
-		if (num==5){bigbox.style.background="#D8D8D8";}
-		if (num==6){bigbox.style.background="#FB3570";}
-		if (num==7){bigbox.style.background="#FFBEC8";}
 		if(num<0){
 			num=imgbox.length-1;
 		}
+		if (num==0){bigbox.style.background="#FF1D3B";}
+		if (num==1){bigbox.style.background="#EAEAF4";}
+		if (num==2){bigbox.style.background="#5F4F40";}
+		if (num==3){bigbox.style.background="#FF4B64";}
+		if (num==4){bigbox.style.background="#5F7F94";}
+		if (num==5){bigbox.style.background="#3A85FA";}
+		if (num==6){bigbox.style.background="#CF031E";}
+		if (num==7){bigbox.style.background="#F9C04C";}
 		for(let i=0;i<imgbox.length;i++){
 			imgbox[i].style.zIndex=5;
 			btn[i].className="btn";
@@ -79,13 +81,14 @@ window.onload=function(){
 
 	for (let i=0;i<btn.length;i++){
 		btn[i].onclick=function(){
-			if (i==1){bigbox.style.background="#D02247";}
-			if (i==2){bigbox.style.background="#47FFF2";}
-			if (i==3){bigbox.style.background="#D4F1EF";}
-			if (i==4){bigbox.style.background="#1F2120";}
-			if (i==5){bigbox.style.background="#D8D8D8";}
-			if (i==6){bigbox.style.background="#FB3570";}
-			if (i==7){bigbox.style.background="#FFBEC8";}
+			if (i==0){bigbox.style.background="#FF1D3B";}
+			if (i==1){bigbox.style.background="#EAEAF4";}
+			if (i==2){bigbox.style.background="#5F4F40";}
+			if (i==3){bigbox.style.background="#FF4B64";}
+			if (i==4){bigbox.style.background="#5F7F94";}
+			if (i==5){bigbox.style.background="#3A85FA";}
+			if (i==6){bigbox.style.background="#CF031E";}
+			if (i==7){bigbox.style.background="#F9C04C";}
 
 			for(let j=0;j<imgbox.length;j++){
 				imgbox[j].style.zIndex=5;
